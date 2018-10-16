@@ -12,5 +12,5 @@ end
 
 def find_the_cheese(pantry)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  pantry.find {|food| cheese_types.any? == food }
+  pantry.find {|food| cheese_types.find {|cheese| cheese == food}}
 end
